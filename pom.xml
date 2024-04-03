@@ -38,12 +38,12 @@
     </dependencies>
 
     <build>
-        <!-- TODO! Добавить секцию “resources”, в которой сказать, что собранные JAR-зависимости это ресурс -->
-<!--        <resources>-->
-<!--            <resource>-->
-<!--                <directory>${project.build.directory}/dependencies</directory>-->
-<!--            </resource>-->
-<!--        </resources>-->
+        <!-- Добавить секцию “resources”, в которой сказать, что собранные JAR-зависимости это ресурс -->
+        <resources>
+            <resource>
+                <directory>${project.build.directory}/dependencies</directory>
+            </resource>
+        </resources>
 
         <plugins>
             <!-- Usual compilation -->
