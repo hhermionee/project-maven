@@ -118,11 +118,12 @@
                     <outputDirectory>
                         ${project.build.directory}/dependencies/
                     </outputDirectory>
+                    <scope>compile</scope>
                 </configuration>
                 <executions>
                     <execution>
                         <id>copy-dependencies</id>
-                        <phase>compile</phase>
+                        <phase>generate-resources</phase>
                         <goals>
                             <goal>copy-dependencies</goal>
                         </goals>
