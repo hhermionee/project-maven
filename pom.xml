@@ -42,6 +42,7 @@
         <resources>
             <resource>
                 <directory>${project.build.directory}/dependencies</directory>
+                <targetPath>lib/</targetPath>
             </resource>
         </resources>
 
@@ -137,14 +138,13 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <classpathPrefix>dependencies/</classpathPrefix>
+                            <classpathPrefix>lib/</classpathPrefix>
                             <mainClass>org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader</mainClass>
                         </manifest>
                         <manifestEntries>
                             <Rsrc-Main-Class>com.javarush.games.racer.RacerGame</Rsrc-Main-Class>
                         </manifestEntries>
                     </archive>
-                    <outputDirectory>${basedir}/lib</outputDirectory>
                 </configuration>
             </plugin>
 
