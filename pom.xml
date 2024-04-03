@@ -41,10 +41,7 @@
         <!-- TODO! Добавить секцию “resources”, в которой сказать, что собранные JAR-зависимости это ресурс -->
 <!--        <resources>-->
 <!--            <resource>-->
-<!--                <directory>${basedir}/target/dependencies</directory>-->
-<!--                <includes>-->
-<!--                    <include>**.jar</include>-->
-<!--                </includes>-->
+<!--                <directory>${project.build.directory}/dependencies</directory>-->
 <!--            </resource>-->
 <!--        </resources>-->
 
@@ -118,7 +115,7 @@
                     <outputDirectory>
                         ${project.build.directory}/dependencies/
                     </outputDirectory>
-                    <scope>compile</scope>
+                    <includeScope>compile</includeScope>
                 </configuration>
                 <executions>
                     <execution>
